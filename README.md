@@ -36,7 +36,7 @@ user request resources with the given token => server verify token => if its the
 ## Disadvantages of Stateless Authentication
 1. Cannot revoke the session anytime before the expiration time which selected when creating token since is not stored in database
 
-# Stateful Authentication
+# Stateful Authentication:
 Stateful session is created on the backend side, and the correspondent session reference Id is sent to the client. Each time the client makes a request to the server, the server locates the session memory using the reference Id from the client and finds the authentication information. In this model, you can easily imagine that if the session memory is deleted on the backend side, then the session reference Id, which the client is holding, is completely meaningless.
 
 ## flow of Stateful Authentication
